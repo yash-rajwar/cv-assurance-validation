@@ -1,0 +1,5667 @@
+{
+  "dataset_name": "CV-Assurance-Dataset-v1",
+  "source_dataset": "COCO 2017 validation",
+  "source_annotation": "datasets/raw/annotations/instances_val2017.json",
+  "source_annotation_sha256": "E8C7F7908F1D7278341FAE127D0DA654F102F11BD7B21D8AEEFA635B8C810B6F",
+  "random_seed": 42,
+  "selection_method": "deterministic multi-label proportional-target greedy balancing",
+  "counts": {
+    "selected": 1000,
+    "development": 800,
+    "holdout": 200
+  },
+  "holdout_immutable": {
+    "marked": true,
+    "marker_file": "datasets/coco_clean/holdout/HOLDOUT_IMMUTABLE.txt",
+    "image_files_read_only": true,
+    "policy": "Never modify holdout data after creation."
+  },
+  "selection_targets_by_category_id": {
+    "1": 539,
+    "2": 30,
+    "3": 107,
+    "4": 32,
+    "5": 19,
+    "6": 38,
+    "7": 31,
+    "8": 50,
+    "9": 24,
+    "10": 38,
+    "11": 17,
+    "13": 14,
+    "14": 7,
+    "15": 47,
+    "16": 25,
+    "17": 37,
+    "18": 35,
+    "19": 26,
+    "20": 13,
+    "21": 17,
+    "22": 18,
+    "23": 10,
+    "24": 17,
+    "25": 20,
+    "27": 46,
+    "28": 35,
+    "31": 58,
+    "32": 29,
+    "33": 21,
+    "34": 17,
+    "35": 24,
+    "36": 10,
+    "37": 34,
+    "38": 18,
+    "39": 19,
+    "40": 20,
+    "41": 25,
+    "42": 30,
+    "43": 33,
+    "44": 76,
+    "46": 22,
+    "47": 78,
+    "48": 31,
+    "49": 36,
+    "50": 31,
+    "51": 63,
+    "52": 21,
+    "53": 15,
+    "54": 20,
+    "55": 17,
+    "56": 14,
+    "57": 16,
+    "58": 10,
+    "59": 31,
+    "60": 12,
+    "61": 25,
+    "62": 116,
+    "63": 39,
+    "64": 34,
+    "65": 30,
+    "67": 100,
+    "70": 30,
+    "72": 41,
+    "73": 37,
+    "74": 18,
+    "75": 29,
+    "76": 21,
+    "77": 43,
+    "78": 11,
+    "79": 23,
+    "80": 2,
+    "81": 37,
+    "82": 20,
+    "84": 46,
+    "85": 41,
+    "86": 27,
+    "87": 6,
+    "88": 19,
+    "89": 2,
+    "90": 7
+  },
+  "holdout_targets_by_category_id": {
+    "1": 117,
+    "2": 8,
+    "3": 24,
+    "4": 8,
+    "5": 4,
+    "6": 10,
+    "7": 8,
+    "8": 14,
+    "9": 6,
+    "10": 10,
+    "11": 4,
+    "13": 3,
+    "14": 1,
+    "15": 13,
+    "16": 6,
+    "17": 10,
+    "18": 9,
+    "19": 6,
+    "20": 3,
+    "21": 4,
+    "22": 4,
+    "23": 2,
+    "24": 4,
+    "25": 5,
+    "27": 11,
+    "28": 9,
+    "31": 12,
+    "32": 7,
+    "33": 5,
+    "34": 4,
+    "35": 6,
+    "36": 2,
+    "37": 9,
+    "38": 4,
+    "39": 4,
+    "40": 5,
+    "41": 6,
+    "42": 8,
+    "43": 8,
+    "44": 18,
+    "46": 5,
+    "47": 18,
+    "48": 7,
+    "49": 8,
+    "50": 8,
+    "51": 14,
+    "52": 5,
+    "53": 3,
+    "54": 5,
+    "55": 4,
+    "56": 3,
+    "57": 4,
+    "58": 2,
+    "59": 8,
+    "60": 3,
+    "61": 6,
+    "62": 27,
+    "63": 9,
+    "64": 8,
+    "65": 8,
+    "67": 22,
+    "70": 8,
+    "72": 10,
+    "73": 9,
+    "74": 4,
+    "75": 7,
+    "76": 5,
+    "77": 12,
+    "78": 2,
+    "79": 5,
+    "80": 1,
+    "81": 10,
+    "82": 5,
+    "84": 10,
+    "85": 11,
+    "86": 7,
+    "87": 1,
+    "88": 4,
+    "89": 1,
+    "90": 1
+  },
+  "class_distribution": {
+    "1": {
+      "source": 2693,
+      "selected": 586,
+      "development": 464,
+      "holdout": 122
+    },
+    "2": {
+      "source": 149,
+      "selected": 38,
+      "development": 29,
+      "holdout": 9
+    },
+    "3": {
+      "source": 535,
+      "selected": 122,
+      "development": 89,
+      "holdout": 33
+    },
+    "4": {
+      "source": 159,
+      "selected": 41,
+      "development": 32,
+      "holdout": 9
+    },
+    "5": {
+      "source": 97,
+      "selected": 22,
+      "development": 18,
+      "holdout": 4
+    },
+    "6": {
+      "source": 189,
+      "selected": 51,
+      "development": 40,
+      "holdout": 11
+    },
+    "7": {
+      "source": 157,
+      "selected": 39,
+      "development": 30,
+      "holdout": 9
+    },
+    "8": {
+      "source": 250,
+      "selected": 71,
+      "development": 54,
+      "holdout": 17
+    },
+    "9": {
+      "source": 121,
+      "selected": 29,
+      "development": 22,
+      "holdout": 7
+    },
+    "10": {
+      "source": 191,
+      "selected": 51,
+      "development": 39,
+      "holdout": 12
+    },
+    "11": {
+      "source": 86,
+      "selected": 20,
+      "development": 16,
+      "holdout": 4
+    },
+    "13": {
+      "source": 69,
+      "selected": 16,
+      "development": 13,
+      "holdout": 3
+    },
+    "14": {
+      "source": 37,
+      "selected": 7,
+      "development": 6,
+      "holdout": 1
+    },
+    "15": {
+      "source": 235,
+      "selected": 66,
+      "development": 50,
+      "holdout": 16
+    },
+    "16": {
+      "source": 125,
+      "selected": 30,
+      "development": 23,
+      "holdout": 7
+    },
+    "17": {
+      "source": 184,
+      "selected": 49,
+      "development": 37,
+      "holdout": 12
+    },
+    "18": {
+      "source": 177,
+      "selected": 46,
+      "development": 36,
+      "holdout": 10
+    },
+    "19": {
+      "source": 128,
+      "selected": 32,
+      "development": 25,
+      "holdout": 7
+    },
+    "20": {
+      "source": 65,
+      "selected": 14,
+      "development": 11,
+      "holdout": 3
+    },
+    "21": {
+      "source": 87,
+      "selected": 20,
+      "development": 16,
+      "holdout": 4
+    },
+    "22": {
+      "source": 89,
+      "selected": 21,
+      "development": 17,
+      "holdout": 4
+    },
+    "23": {
+      "source": 49,
+      "selected": 11,
+      "development": 9,
+      "holdout": 2
+    },
+    "24": {
+      "source": 85,
+      "selected": 20,
+      "development": 16,
+      "holdout": 4
+    },
+    "25": {
+      "source": 101,
+      "selected": 23,
+      "development": 18,
+      "holdout": 5
+    },
+    "27": {
+      "source": 228,
+      "selected": 53,
+      "development": 39,
+      "holdout": 14
+    },
+    "28": {
+      "source": 174,
+      "selected": 46,
+      "development": 36,
+      "holdout": 10
+    },
+    "31": {
+      "source": 292,
+      "selected": 62,
+      "development": 48,
+      "holdout": 14
+    },
+    "32": {
+      "source": 145,
+      "selected": 36,
+      "development": 28,
+      "holdout": 8
+    },
+    "33": {
+      "source": 105,
+      "selected": 25,
+      "development": 20,
+      "holdout": 5
+    },
+    "34": {
+      "source": 84,
+      "selected": 19,
+      "development": 15,
+      "holdout": 4
+    },
+    "35": {
+      "source": 120,
+      "selected": 29,
+      "development": 22,
+      "holdout": 7
+    },
+    "36": {
+      "source": 49,
+      "selected": 11,
+      "development": 9,
+      "holdout": 2
+    },
+    "37": {
+      "source": 169,
+      "selected": 44,
+      "development": 34,
+      "holdout": 10
+    },
+    "38": {
+      "source": 91,
+      "selected": 21,
+      "development": 17,
+      "holdout": 4
+    },
+    "39": {
+      "source": 97,
+      "selected": 22,
+      "development": 18,
+      "holdout": 4
+    },
+    "40": {
+      "source": 100,
+      "selected": 23,
+      "development": 18,
+      "holdout": 5
+    },
+    "41": {
+      "source": 127,
+      "selected": 30,
+      "development": 23,
+      "holdout": 7
+    },
+    "42": {
+      "source": 149,
+      "selected": 38,
+      "development": 29,
+      "holdout": 9
+    },
+    "43": {
+      "source": 167,
+      "selected": 42,
+      "development": 33,
+      "holdout": 9
+    },
+    "44": {
+      "source": 379,
+      "selected": 89,
+      "development": 66,
+      "holdout": 23
+    },
+    "46": {
+      "source": 110,
+      "selected": 26,
+      "development": 21,
+      "holdout": 5
+    },
+    "47": {
+      "source": 390,
+      "selected": 88,
+      "development": 68,
+      "holdout": 20
+    },
+    "48": {
+      "source": 155,
+      "selected": 35,
+      "development": 27,
+      "holdout": 8
+    },
+    "49": {
+      "source": 181,
+      "selected": 40,
+      "development": 31,
+      "holdout": 9
+    },
+    "50": {
+      "source": 153,
+      "selected": 38,
+      "development": 29,
+      "holdout": 9
+    },
+    "51": {
+      "source": 314,
+      "selected": 70,
+      "development": 54,
+      "holdout": 16
+    },
+    "52": {
+      "source": 103,
+      "selected": 25,
+      "development": 20,
+      "holdout": 5
+    },
+    "53": {
+      "source": 76,
+      "selected": 17,
+      "development": 14,
+      "holdout": 3
+    },
+    "54": {
+      "source": 98,
+      "selected": 23,
+      "development": 18,
+      "holdout": 5
+    },
+    "55": {
+      "source": 85,
+      "selected": 20,
+      "development": 16,
+      "holdout": 4
+    },
+    "56": {
+      "source": 71,
+      "selected": 16,
+      "development": 13,
+      "holdout": 3
+    },
+    "57": {
+      "source": 81,
+      "selected": 18,
+      "development": 14,
+      "holdout": 4
+    },
+    "58": {
+      "source": 51,
+      "selected": 11,
+      "development": 9,
+      "holdout": 2
+    },
+    "59": {
+      "source": 153,
+      "selected": 39,
+      "development": 30,
+      "holdout": 9
+    },
+    "60": {
+      "source": 62,
+      "selected": 13,
+      "development": 10,
+      "holdout": 3
+    },
+    "61": {
+      "source": 124,
+      "selected": 30,
+      "development": 23,
+      "holdout": 7
+    },
+    "62": {
+      "source": 580,
+      "selected": 134,
+      "development": 102,
+      "holdout": 32
+    },
+    "63": {
+      "source": 195,
+      "selected": 44,
+      "development": 35,
+      "holdout": 9
+    },
+    "64": {
+      "source": 172,
+      "selected": 38,
+      "development": 29,
+      "holdout": 9
+    },
+    "65": {
+      "source": 149,
+      "selected": 38,
+      "development": 29,
+      "holdout": 9
+    },
+    "67": {
+      "source": 501,
+      "selected": 110,
+      "development": 85,
+      "holdout": 25
+    },
+    "70": {
+      "source": 149,
+      "selected": 38,
+      "development": 29,
+      "holdout": 9
+    },
+    "72": {
+      "source": 207,
+      "selected": 48,
+      "development": 37,
+      "holdout": 11
+    },
+    "73": {
+      "source": 183,
+      "selected": 45,
+      "development": 35,
+      "holdout": 10
+    },
+    "74": {
+      "source": 88,
+      "selected": 19,
+      "development": 15,
+      "holdout": 4
+    },
+    "75": {
+      "source": 145,
+      "selected": 36,
+      "development": 28,
+      "holdout": 8
+    },
+    "76": {
+      "source": 106,
+      "selected": 23,
+      "development": 18,
+      "holdout": 5
+    },
+    "77": {
+      "source": 214,
+      "selected": 59,
+      "development": 45,
+      "holdout": 14
+    },
+    "78": {
+      "source": 54,
+      "selected": 12,
+      "development": 10,
+      "holdout": 2
+    },
+    "79": {
+      "source": 115,
+      "selected": 27,
+      "development": 22,
+      "holdout": 5
+    },
+    "80": {
+      "source": 8,
+      "selected": 2,
+      "development": 1,
+      "holdout": 1
+    },
+    "81": {
+      "source": 187,
+      "selected": 49,
+      "development": 37,
+      "holdout": 12
+    },
+    "82": {
+      "source": 101,
+      "selected": 23,
+      "development": 18,
+      "holdout": 5
+    },
+    "84": {
+      "source": 230,
+      "selected": 50,
+      "development": 40,
+      "holdout": 10
+    },
+    "85": {
+      "source": 204,
+      "selected": 56,
+      "development": 43,
+      "holdout": 13
+    },
+    "86": {
+      "source": 137,
+      "selected": 33,
+      "development": 25,
+      "holdout": 8
+    },
+    "87": {
+      "source": 28,
+      "selected": 6,
+      "development": 5,
+      "holdout": 1
+    },
+    "88": {
+      "source": 94,
+      "selected": 22,
+      "development": 18,
+      "holdout": 4
+    },
+    "89": {
+      "source": 9,
+      "selected": 2,
+      "development": 1,
+      "holdout": 1
+    },
+    "90": {
+      "source": 34,
+      "selected": 7,
+      "development": 6,
+      "holdout": 1
+    }
+  },
+  "images": [
+    {
+      "image_id": 885,
+      "filename": "000000000885.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 1268,
+      "filename": "000000001268.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 2006,
+      "filename": "000000002006.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 2532,
+      "filename": "000000002532.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 2592,
+      "filename": "000000002592.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 5060,
+      "filename": "000000005060.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 5503,
+      "filename": "000000005503.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 5600,
+      "filename": "000000005600.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 6213,
+      "filename": "000000006213.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 6771,
+      "filename": "000000006771.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 7278,
+      "filename": "000000007278.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 7816,
+      "filename": "000000007816.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 8532,
+      "filename": "000000008532.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 8690,
+      "filename": "000000008690.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 10995,
+      "filename": "000000010995.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 11615,
+      "filename": "000000011615.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 11813,
+      "filename": "000000011813.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 12667,
+      "filename": "000000012667.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 14038,
+      "filename": "000000014038.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 15272,
+      "filename": "000000015272.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 15660,
+      "filename": "000000015660.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 15746,
+      "filename": "000000015746.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 15956,
+      "filename": "000000015956.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 16010,
+      "filename": "000000016010.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 16228,
+      "filename": "000000016228.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 16451,
+      "filename": "000000016451.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 17029,
+      "filename": "000000017029.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 17899,
+      "filename": "000000017899.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 18380,
+      "filename": "000000018380.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 18519,
+      "filename": "000000018519.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 18833,
+      "filename": "000000018833.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 19221,
+      "filename": "000000019221.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 19924,
+      "filename": "000000019924.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 20059,
+      "filename": "000000020059.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 20553,
+      "filename": "000000020553.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 22623,
+      "filename": "000000022623.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 22935,
+      "filename": "000000022935.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 23230,
+      "filename": "000000023230.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 23937,
+      "filename": "000000023937.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 25096,
+      "filename": "000000025096.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 25986,
+      "filename": "000000025986.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 26690,
+      "filename": "000000026690.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 27932,
+      "filename": "000000027932.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 28993,
+      "filename": "000000028993.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 29397,
+      "filename": "000000029397.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 31296,
+      "filename": "000000031296.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 31735,
+      "filename": "000000031735.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 31749,
+      "filename": "000000031749.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 32081,
+      "filename": "000000032081.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 32610,
+      "filename": "000000032610.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 32817,
+      "filename": "000000032817.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 32861,
+      "filename": "000000032861.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 33005,
+      "filename": "000000033005.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 33104,
+      "filename": "000000033104.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 33221,
+      "filename": "000000033221.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 34417,
+      "filename": "000000034417.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 35279,
+      "filename": "000000035279.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 35682,
+      "filename": "000000035682.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 36844,
+      "filename": "000000036844.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 36936,
+      "filename": "000000036936.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 37670,
+      "filename": "000000037670.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 37740,
+      "filename": "000000037740.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 37777,
+      "filename": "000000037777.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 38070,
+      "filename": "000000038070.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 39405,
+      "filename": "000000039405.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 39484,
+      "filename": "000000039484.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 39769,
+      "filename": "000000039769.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 40471,
+      "filename": "000000040471.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 42296,
+      "filename": "000000042296.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 42628,
+      "filename": "000000042628.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 44260,
+      "filename": "000000044260.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 45728,
+      "filename": "000000045728.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 47010,
+      "filename": "000000047010.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 47112,
+      "filename": "000000047112.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 47819,
+      "filename": "000000047819.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 48504,
+      "filename": "000000048504.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 48564,
+      "filename": "000000048564.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 49060,
+      "filename": "000000049060.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 49091,
+      "filename": "000000049091.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 49259,
+      "filename": "000000049259.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 49759,
+      "filename": "000000049759.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 49761,
+      "filename": "000000049761.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 50811,
+      "filename": "000000050811.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 52412,
+      "filename": "000000052412.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 52591,
+      "filename": "000000052591.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 54593,
+      "filename": "000000054593.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 54654,
+      "filename": "000000054654.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 55002,
+      "filename": "000000055002.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 55022,
+      "filename": "000000055022.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 55072,
+      "filename": "000000055072.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 55528,
+      "filename": "000000055528.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 56350,
+      "filename": "000000056350.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 57149,
+      "filename": "000000057149.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 58384,
+      "filename": "000000058384.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 58393,
+      "filename": "000000058393.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 59386,
+      "filename": "000000059386.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 59598,
+      "filename": "000000059598.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 60507,
+      "filename": "000000060507.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 60823,
+      "filename": "000000060823.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 61471,
+      "filename": "000000061471.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 61584,
+      "filename": "000000061584.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 63047,
+      "filename": "000000063047.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 63740,
+      "filename": "000000063740.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 64359,
+      "filename": "000000064359.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 64523,
+      "filename": "000000064523.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 66231,
+      "filename": "000000066231.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 66886,
+      "filename": "000000066886.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 67180,
+      "filename": "000000067180.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 67616,
+      "filename": "000000067616.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 68078,
+      "filename": "000000068078.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 68286,
+      "filename": "000000068286.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 70739,
+      "filename": "000000070739.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 71226,
+      "filename": "000000071226.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 71451,
+      "filename": "000000071451.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 71877,
+      "filename": "000000071877.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 73153,
+      "filename": "000000073153.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 73946,
+      "filename": "000000073946.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 74209,
+      "filename": "000000074209.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 74256,
+      "filename": "000000074256.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 75393,
+      "filename": "000000075393.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 76547,
+      "filename": "000000076547.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 76731,
+      "filename": "000000076731.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 77396,
+      "filename": "000000077396.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 78266,
+      "filename": "000000078266.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 78959,
+      "filename": "000000078959.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 79014,
+      "filename": "000000079014.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 79144,
+      "filename": "000000079144.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 79229,
+      "filename": "000000079229.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 79588,
+      "filename": "000000079588.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 80153,
+      "filename": "000000080153.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 83172,
+      "filename": "000000083172.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 84241,
+      "filename": "000000084241.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 84270,
+      "filename": "000000084270.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 84362,
+      "filename": "000000084362.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 84674,
+      "filename": "000000084674.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 84752,
+      "filename": "000000084752.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 85089,
+      "filename": "000000085089.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 85665,
+      "filename": "000000085665.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 86220,
+      "filename": "000000086220.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 86483,
+      "filename": "000000086483.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 87476,
+      "filename": "000000087476.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 88218,
+      "filename": "000000088218.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 88345,
+      "filename": "000000088345.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 89697,
+      "filename": "000000089697.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 90062,
+      "filename": "000000090062.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 90208,
+      "filename": "000000090208.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 91406,
+      "filename": "000000091406.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 91500,
+      "filename": "000000091500.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 92053,
+      "filename": "000000092053.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 92091,
+      "filename": "000000092091.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 92177,
+      "filename": "000000092177.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 92660,
+      "filename": "000000092660.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 94157,
+      "filename": "000000094157.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 94326,
+      "filename": "000000094326.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 94852,
+      "filename": "000000094852.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 94944,
+      "filename": "000000094944.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 95843,
+      "filename": "000000095843.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 96960,
+      "filename": "000000096960.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 97230,
+      "filename": "000000097230.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 97994,
+      "filename": "000000097994.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 98497,
+      "filename": "000000098497.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 100489,
+      "filename": "000000100489.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 102331,
+      "filename": "000000102331.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 102644,
+      "filename": "000000102644.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 102805,
+      "filename": "000000102805.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 102820,
+      "filename": "000000102820.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 104669,
+      "filename": "000000104669.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 105264,
+      "filename": "000000105264.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 105912,
+      "filename": "000000105912.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 105923,
+      "filename": "000000105923.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 106266,
+      "filename": "000000106266.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 106389,
+      "filename": "000000106389.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 108026,
+      "filename": "000000108026.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 108244,
+      "filename": "000000108244.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 108440,
+      "filename": "000000108440.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 110282,
+      "filename": "000000110282.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 110884,
+      "filename": "000000110884.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 113051,
+      "filename": "000000113051.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 113589,
+      "filename": "000000113589.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 114770,
+      "filename": "000000114770.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 117525,
+      "filename": "000000117525.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 118405,
+      "filename": "000000118405.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 119088,
+      "filename": "000000119088.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 119233,
+      "filename": "000000119233.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 119445,
+      "filename": "000000119445.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 119516,
+      "filename": "000000119516.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 119641,
+      "filename": "000000119641.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 119828,
+      "filename": "000000119828.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 119995,
+      "filename": "000000119995.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 120420,
+      "filename": "000000120420.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 121497,
+      "filename": "000000121497.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 121744,
+      "filename": "000000121744.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 122166,
+      "filename": "000000122166.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 122606,
+      "filename": "000000122606.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 122745,
+      "filename": "000000122745.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 122962,
+      "filename": "000000122962.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 123131,
+      "filename": "000000123131.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 123213,
+      "filename": "000000123213.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 125572,
+      "filename": "000000125572.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 125952,
+      "filename": "000000125952.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 127092,
+      "filename": "000000127092.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 127270,
+      "filename": "000000127270.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 127494,
+      "filename": "000000127494.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 127517,
+      "filename": "000000127517.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 127624,
+      "filename": "000000127624.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 127955,
+      "filename": "000000127955.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 128675,
+      "filename": "000000128675.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 128699,
+      "filename": "000000128699.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 129113,
+      "filename": "000000129113.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 130599,
+      "filename": "000000130599.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 131379,
+      "filename": "000000131379.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 132544,
+      "filename": "000000132544.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 132796,
+      "filename": "000000132796.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 133087,
+      "filename": "000000133087.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 133567,
+      "filename": "000000133567.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 133819,
+      "filename": "000000133819.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 134034,
+      "filename": "000000134034.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 134096,
+      "filename": "000000134096.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 134882,
+      "filename": "000000134882.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 135890,
+      "filename": "000000135890.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 135902,
+      "filename": "000000135902.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 137106,
+      "filename": "000000137106.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 137246,
+      "filename": "000000137246.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 137294,
+      "filename": "000000137294.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 139099,
+      "filename": "000000139099.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 139684,
+      "filename": "000000139684.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 139872,
+      "filename": "000000139872.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 139883,
+      "filename": "000000139883.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 140420,
+      "filename": "000000140420.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 140583,
+      "filename": "000000140583.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 140658,
+      "filename": "000000140658.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 140929,
+      "filename": "000000140929.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 141671,
+      "filename": "000000141671.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 142238,
+      "filename": "000000142238.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 142585,
+      "filename": "000000142585.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 144300,
+      "filename": "000000144300.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 144784,
+      "filename": "000000144784.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 145591,
+      "filename": "000000145591.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 146358,
+      "filename": "000000146358.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 146489,
+      "filename": "000000146489.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 146498,
+      "filename": "000000146498.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 146825,
+      "filename": "000000146825.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 147729,
+      "filename": "000000147729.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 147745,
+      "filename": "000000147745.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 148707,
+      "filename": "000000148707.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 148719,
+      "filename": "000000148719.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 148999,
+      "filename": "000000148999.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 150638,
+      "filename": "000000150638.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 154000,
+      "filename": "000000154000.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 156076,
+      "filename": "000000156076.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 156643,
+      "filename": "000000156643.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 157046,
+      "filename": "000000157046.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 157124,
+      "filename": "000000157124.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 157365,
+      "filename": "000000157365.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 157390,
+      "filename": "000000157390.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 157756,
+      "filename": "000000157756.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 157807,
+      "filename": "000000157807.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 157847,
+      "filename": "000000157847.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 157928,
+      "filename": "000000157928.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 158227,
+      "filename": "000000158227.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 158548,
+      "filename": "000000158548.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 158744,
+      "filename": "000000158744.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 158945,
+      "filename": "000000158945.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 159112,
+      "filename": "000000159112.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 159311,
+      "filename": "000000159311.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 159977,
+      "filename": "000000159977.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 160556,
+      "filename": "000000160556.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 160728,
+      "filename": "000000160728.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 160864,
+      "filename": "000000160864.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 161128,
+      "filename": "000000161128.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 161397,
+      "filename": "000000161397.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 161978,
+      "filename": "000000161978.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 162130,
+      "filename": "000000162130.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 162543,
+      "filename": "000000162543.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 162732,
+      "filename": "000000162732.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 163257,
+      "filename": "000000163257.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 163290,
+      "filename": "000000163290.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 163746,
+      "filename": "000000163746.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 165518,
+      "filename": "000000165518.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 166509,
+      "filename": "000000166509.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 166747,
+      "filename": "000000166747.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 167540,
+      "filename": "000000167540.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 168458,
+      "filename": "000000168458.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 168619,
+      "filename": "000000168619.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 169076,
+      "filename": "000000169076.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 170474,
+      "filename": "000000170474.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 170893,
+      "filename": "000000170893.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 171298,
+      "filename": "000000171298.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 171382,
+      "filename": "000000171382.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 172595,
+      "filename": "000000172595.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 172877,
+      "filename": "000000172877.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 172935,
+      "filename": "000000172935.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 173008,
+      "filename": "000000173008.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 173183,
+      "filename": "000000173183.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 174004,
+      "filename": "000000174004.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 176446,
+      "filename": "000000176446.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 176606,
+      "filename": "000000176606.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 176701,
+      "filename": "000000176701.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 176778,
+      "filename": "000000176778.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 176799,
+      "filename": "000000176799.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 177383,
+      "filename": "000000177383.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 177489,
+      "filename": "000000177489.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 178028,
+      "filename": "000000178028.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 179112,
+      "filename": "000000179112.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 179214,
+      "filename": "000000179214.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 179265,
+      "filename": "000000179265.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 179392,
+      "filename": "000000179392.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 180101,
+      "filename": "000000180101.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 180798,
+      "filename": "000000180798.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 181753,
+      "filename": "000000181753.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 182162,
+      "filename": "000000182162.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 182441,
+      "filename": "000000182441.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 182611,
+      "filename": "000000182611.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 182923,
+      "filename": "000000182923.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 184324,
+      "filename": "000000184324.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 184338,
+      "filename": "000000184338.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 185157,
+      "filename": "000000185157.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 185250,
+      "filename": "000000185250.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 186422,
+      "filename": "000000186422.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 187144,
+      "filename": "000000187144.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 187249,
+      "filename": "000000187249.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 187734,
+      "filename": "000000187734.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 188465,
+      "filename": "000000188465.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 188592,
+      "filename": "000000188592.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 189226,
+      "filename": "000000189226.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 189310,
+      "filename": "000000189310.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 189436,
+      "filename": "000000189436.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 189475,
+      "filename": "000000189475.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 189698,
+      "filename": "000000189698.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 189775,
+      "filename": "000000189775.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 190236,
+      "filename": "000000190236.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 190307,
+      "filename": "000000190307.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 190753,
+      "filename": "000000190753.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 190853,
+      "filename": "000000190853.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 192047,
+      "filename": "000000192047.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 192607,
+      "filename": "000000192607.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 192670,
+      "filename": "000000192670.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 192904,
+      "filename": "000000192904.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 193162,
+      "filename": "000000193162.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 193674,
+      "filename": "000000193674.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 194724,
+      "filename": "000000194724.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 195045,
+      "filename": "000000195045.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 195842,
+      "filename": "000000195842.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 196141,
+      "filename": "000000196141.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 197022,
+      "filename": "000000197022.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 197528,
+      "filename": "000000197528.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 197658,
+      "filename": "000000197658.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 198641,
+      "filename": "000000198641.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 199055,
+      "filename": "000000199055.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 199395,
+      "filename": "000000199395.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 200421,
+      "filename": "000000200421.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 201426,
+      "filename": "000000201426.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 202228,
+      "filename": "000000202228.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 202339,
+      "filename": "000000202339.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 203317,
+      "filename": "000000203317.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 204871,
+      "filename": "000000204871.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 205401,
+      "filename": "000000205401.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 205647,
+      "filename": "000000205647.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 206487,
+      "filename": "000000206487.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 206831,
+      "filename": "000000206831.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 209142,
+      "filename": "000000209142.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 210855,
+      "filename": "000000210855.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 211042,
+      "filename": "000000211042.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 212166,
+      "filename": "000000212166.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 212226,
+      "filename": "000000212226.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 212453,
+      "filename": "000000212453.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 213255,
+      "filename": "000000213255.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 213547,
+      "filename": "000000213547.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 214224,
+      "filename": "000000214224.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 216296,
+      "filename": "000000216296.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 216739,
+      "filename": "000000216739.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 218439,
+      "filename": "000000218439.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 219271,
+      "filename": "000000219271.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 221281,
+      "filename": "000000221281.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 222299,
+      "filename": "000000222299.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 222559,
+      "filename": "000000222559.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 222991,
+      "filename": "000000222991.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 223182,
+      "filename": "000000223182.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 224119,
+      "filename": "000000224119.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 225532,
+      "filename": "000000225532.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 225670,
+      "filename": "000000225670.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 226147,
+      "filename": "000000226147.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 226408,
+      "filename": "000000226408.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 226417,
+      "filename": "000000226417.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 226883,
+      "filename": "000000226883.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 226903,
+      "filename": "000000226903.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 227044,
+      "filename": "000000227044.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 227399,
+      "filename": "000000227399.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 228144,
+      "filename": "000000228144.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 228981,
+      "filename": "000000228981.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 229358,
+      "filename": "000000229358.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 229948,
+      "filename": "000000229948.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 229997,
+      "filename": "000000229997.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 230362,
+      "filename": "000000230362.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 231088,
+      "filename": "000000231088.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 231097,
+      "filename": "000000231097.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 231508,
+      "filename": "000000231508.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 231822,
+      "filename": "000000231822.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 231831,
+      "filename": "000000231831.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 232088,
+      "filename": "000000232088.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 232684,
+      "filename": "000000232684.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 233567,
+      "filename": "000000233567.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 233771,
+      "filename": "000000233771.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 234779,
+      "filename": "000000234779.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 235241,
+      "filename": "000000235241.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 235784,
+      "filename": "000000235784.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 236166,
+      "filename": "000000236166.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 236845,
+      "filename": "000000236845.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 237864,
+      "filename": "000000237864.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 239347,
+      "filename": "000000239347.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 239717,
+      "filename": "000000239717.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 239857,
+      "filename": "000000239857.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 240023,
+      "filename": "000000240023.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 240049,
+      "filename": "000000240049.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 241602,
+      "filename": "000000241602.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 242287,
+      "filename": "000000242287.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 243148,
+      "filename": "000000243148.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 243626,
+      "filename": "000000243626.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 245102,
+      "filename": "000000245102.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 245513,
+      "filename": "000000245513.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 245651,
+      "filename": "000000245651.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 245764,
+      "filename": "000000245764.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 246963,
+      "filename": "000000246963.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 246968,
+      "filename": "000000246968.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 248980,
+      "filename": "000000248980.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 250127,
+      "filename": "000000250127.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 251537,
+      "filename": "000000251537.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 252507,
+      "filename": "000000252507.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 252559,
+      "filename": "000000252559.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 252776,
+      "filename": "000000252776.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 253002,
+      "filename": "000000253002.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 253386,
+      "filename": "000000253386.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 253452,
+      "filename": "000000253452.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 253835,
+      "filename": "000000253835.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 254814,
+      "filename": "000000254814.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 255749,
+      "filename": "000000255749.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 255965,
+      "filename": "000000255965.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 257478,
+      "filename": "000000257478.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 257865,
+      "filename": "000000257865.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 257896,
+      "filename": "000000257896.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 258883,
+      "filename": "000000258883.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 259690,
+      "filename": "000000259690.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 259854,
+      "filename": "000000259854.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 260470,
+      "filename": "000000260470.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 261097,
+      "filename": "000000261097.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 261888,
+      "filename": "000000261888.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 262048,
+      "filename": "000000262048.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 262587,
+      "filename": "000000262587.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 263425,
+      "filename": "000000263425.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 263966,
+      "filename": "000000263966.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 266206,
+      "filename": "000000266206.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 267946,
+      "filename": "000000267946.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 268729,
+      "filename": "000000268729.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 269113,
+      "filename": "000000269113.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 269682,
+      "filename": "000000269682.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 270122,
+      "filename": "000000270122.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 270883,
+      "filename": "000000270883.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 271116,
+      "filename": "000000271116.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 271457,
+      "filename": "000000271457.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 271728,
+      "filename": "000000271728.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 273232,
+      "filename": "000000273232.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 273711,
+      "filename": "000000273711.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 274411,
+      "filename": "000000274411.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 274708,
+      "filename": "000000274708.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 276018,
+      "filename": "000000276018.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 276707,
+      "filename": "000000276707.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 278705,
+      "filename": "000000278705.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 278749,
+      "filename": "000000278749.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 279278,
+      "filename": "000000279278.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 279714,
+      "filename": "000000279714.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 283070,
+      "filename": "000000283070.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 284282,
+      "filename": "000000284282.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 284762,
+      "filename": "000000284762.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 284991,
+      "filename": "000000284991.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 285788,
+      "filename": "000000285788.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 286182,
+      "filename": "000000286182.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 286507,
+      "filename": "000000286507.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 286553,
+      "filename": "000000286553.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 287527,
+      "filename": "000000287527.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 287874,
+      "filename": "000000287874.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 287959,
+      "filename": "000000287959.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 288391,
+      "filename": "000000288391.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 288430,
+      "filename": "000000288430.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 288584,
+      "filename": "000000288584.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 288685,
+      "filename": "000000288685.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 289393,
+      "filename": "000000289393.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 289417,
+      "filename": "000000289417.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 289594,
+      "filename": "000000289594.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 289938,
+      "filename": "000000289938.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 289960,
+      "filename": "000000289960.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 290179,
+      "filename": "000000290179.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 290843,
+      "filename": "000000290843.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 292446,
+      "filename": "000000292446.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 293324,
+      "filename": "000000293324.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 294350,
+      "filename": "000000294350.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 294783,
+      "filename": "000000294783.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 294831,
+      "filename": "000000294831.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 296649,
+      "filename": "000000296649.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 296657,
+      "filename": "000000296657.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 297022,
+      "filename": "000000297022.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 297681,
+      "filename": "000000297681.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 298396,
+      "filename": "000000298396.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 300341,
+      "filename": "000000300341.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 300842,
+      "filename": "000000300842.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 301061,
+      "filename": "000000301061.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 301376,
+      "filename": "000000301376.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 301421,
+      "filename": "000000301421.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 302452,
+      "filename": "000000302452.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 302990,
+      "filename": "000000302990.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 303713,
+      "filename": "000000303713.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 304404,
+      "filename": "000000304404.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 304545,
+      "filename": "000000304545.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 304817,
+      "filename": "000000304817.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 304984,
+      "filename": "000000304984.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 305695,
+      "filename": "000000305695.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 306437,
+      "filename": "000000306437.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 306893,
+      "filename": "000000306893.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 307172,
+      "filename": "000000307172.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 308476,
+      "filename": "000000308476.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 308587,
+      "filename": "000000308587.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 309173,
+      "filename": "000000309173.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 311002,
+      "filename": "000000311002.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 311190,
+      "filename": "000000311190.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 311295,
+      "filename": "000000311295.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 311950,
+      "filename": "000000311950.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 312237,
+      "filename": "000000312237.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 312278,
+      "filename": "000000312278.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 312421,
+      "filename": "000000312421.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 312489,
+      "filename": "000000312489.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 314177,
+      "filename": "000000314177.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 314914,
+      "filename": "000000314914.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 315492,
+      "filename": "000000315492.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 316015,
+      "filename": "000000316015.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 316666,
+      "filename": "000000316666.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 317024,
+      "filename": "000000317024.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 318138,
+      "filename": "000000318138.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 319935,
+      "filename": "000000319935.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 320642,
+      "filename": "000000320642.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 321557,
+      "filename": "000000321557.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 322163,
+      "filename": "000000322163.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 322829,
+      "filename": "000000322829.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 322864,
+      "filename": "000000322864.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 323355,
+      "filename": "000000323355.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 323496,
+      "filename": "000000323496.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 323751,
+      "filename": "000000323751.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 323828,
+      "filename": "000000323828.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 323895,
+      "filename": "000000323895.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 324158,
+      "filename": "000000324158.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 325031,
+      "filename": "000000325031.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 326082,
+      "filename": "000000326082.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 326248,
+      "filename": "000000326248.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 326542,
+      "filename": "000000326542.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 327617,
+      "filename": "000000327617.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 327769,
+      "filename": "000000327769.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 329323,
+      "filename": "000000329323.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 330554,
+      "filename": "000000330554.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 331569,
+      "filename": "000000331569.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 331817,
+      "filename": "000000331817.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 332570,
+      "filename": "000000332570.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 334309,
+      "filename": "000000334309.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 334417,
+      "filename": "000000334417.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 334521,
+      "filename": "000000334521.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 334555,
+      "filename": "000000334555.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 334767,
+      "filename": "000000334767.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 334977,
+      "filename": "000000334977.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 335450,
+      "filename": "000000335450.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 335800,
+      "filename": "000000335800.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 335954,
+      "filename": "000000335954.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 338304,
+      "filename": "000000338304.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 338532,
+      "filename": "000000338532.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 338718,
+      "filename": "000000338718.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 338905,
+      "filename": "000000338905.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 340697,
+      "filename": "000000340697.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 341094,
+      "filename": "000000341094.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 341719,
+      "filename": "000000341719.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 342128,
+      "filename": "000000342128.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 342397,
+      "filename": "000000342397.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 343218,
+      "filename": "000000343218.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 343496,
+      "filename": "000000343496.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 343976,
+      "filename": "000000343976.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 344614,
+      "filename": "000000344614.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 344816,
+      "filename": "000000344816.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 345027,
+      "filename": "000000345027.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 345385,
+      "filename": "000000345385.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 345466,
+      "filename": "000000345466.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 345941,
+      "filename": "000000345941.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 347174,
+      "filename": "000000347174.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 347265,
+      "filename": "000000347265.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 347693,
+      "filename": "000000347693.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 348881,
+      "filename": "000000348881.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 349480,
+      "filename": "000000349480.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 349678,
+      "filename": "000000349678.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 350023,
+      "filename": "000000350023.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 350122,
+      "filename": "000000350122.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 350148,
+      "filename": "000000350148.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 350607,
+      "filename": "000000350607.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 351559,
+      "filename": "000000351559.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 351823,
+      "filename": "000000351823.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 352491,
+      "filename": "000000352491.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 354307,
+      "filename": "000000354307.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 355325,
+      "filename": "000000355325.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 355610,
+      "filename": "000000355610.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 355677,
+      "filename": "000000355677.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 356125,
+      "filename": "000000356125.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 356347,
+      "filename": "000000356347.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 356424,
+      "filename": "000000356424.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 356432,
+      "filename": "000000356432.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 356612,
+      "filename": "000000356612.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 357430,
+      "filename": "000000357430.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 357459,
+      "filename": "000000357459.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 357742,
+      "filename": "000000357742.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 357816,
+      "filename": "000000357816.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 357888,
+      "filename": "000000357888.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 360097,
+      "filename": "000000360097.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 360943,
+      "filename": "000000360943.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 361506,
+      "filename": "000000361506.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 361571,
+      "filename": "000000361571.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 361919,
+      "filename": "000000361919.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 363666,
+      "filename": "000000363666.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 363875,
+      "filename": "000000363875.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 364166,
+      "filename": "000000364166.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 364557,
+      "filename": "000000364557.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 365095,
+      "filename": "000000365095.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 365387,
+      "filename": "000000365387.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 365642,
+      "filename": "000000365642.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 366884,
+      "filename": "000000366884.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 367095,
+      "filename": "000000367095.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 367680,
+      "filename": "000000367680.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 368940,
+      "filename": "000000368940.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 368961,
+      "filename": "000000368961.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 369442,
+      "filename": "000000369442.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 369503,
+      "filename": "000000369503.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 369541,
+      "filename": "000000369541.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 369675,
+      "filename": "000000369675.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 369757,
+      "filename": "000000369757.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 370042,
+      "filename": "000000370042.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 370478,
+      "filename": "000000370478.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 370711,
+      "filename": "000000370711.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 371677,
+      "filename": "000000371677.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 372718,
+      "filename": "000000372718.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 373382,
+      "filename": "000000373382.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 375278,
+      "filename": "000000375278.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 375430,
+      "filename": "000000375430.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 375493,
+      "filename": "000000375493.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 376322,
+      "filename": "000000376322.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 376442,
+      "filename": "000000376442.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 376478,
+      "filename": "000000376478.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 376625,
+      "filename": "000000376625.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 376900,
+      "filename": "000000376900.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 377000,
+      "filename": "000000377000.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 377113,
+      "filename": "000000377113.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 377670,
+      "filename": "000000377670.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 377882,
+      "filename": "000000377882.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 378673,
+      "filename": "000000378673.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 378873,
+      "filename": "000000378873.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 379441,
+      "filename": "000000379441.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 379533,
+      "filename": "000000379533.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 379800,
+      "filename": "000000379800.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 380706,
+      "filename": "000000380706.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 380711,
+      "filename": "000000380711.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 381971,
+      "filename": "000000381971.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 383339,
+      "filename": "000000383339.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 384468,
+      "filename": "000000384468.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 384666,
+      "filename": "000000384666.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 384808,
+      "filename": "000000384808.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 384949,
+      "filename": "000000384949.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 385997,
+      "filename": "000000385997.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 386457,
+      "filename": "000000386457.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 387098,
+      "filename": "000000387098.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 387387,
+      "filename": "000000387387.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 387916,
+      "filename": "000000387916.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 388258,
+      "filename": "000000388258.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 388927,
+      "filename": "000000388927.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 389381,
+      "filename": "000000389381.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 390826,
+      "filename": "000000390826.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 390902,
+      "filename": "000000390902.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 391140,
+      "filename": "000000391140.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 391290,
+      "filename": "000000391290.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 391722,
+      "filename": "000000391722.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 392818,
+      "filename": "000000392818.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 393569,
+      "filename": "000000393569.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 396200,
+      "filename": "000000396200.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 396274,
+      "filename": "000000396274.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 396729,
+      "filename": "000000396729.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 397133,
+      "filename": "000000397133.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 398028,
+      "filename": "000000398028.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 398203,
+      "filename": "000000398203.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 398652,
+      "filename": "000000398652.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 398905,
+      "filename": "000000398905.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 400922,
+      "filename": "000000400922.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 401862,
+      "filename": "000000401862.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 402473,
+      "filename": "000000402473.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 402615,
+      "filename": "000000402615.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 402765,
+      "filename": "000000402765.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 403584,
+      "filename": "000000403584.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 404191,
+      "filename": "000000404191.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 404534,
+      "filename": "000000404534.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 404601,
+      "filename": "000000404601.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 405195,
+      "filename": "000000405195.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 406417,
+      "filename": "000000406417.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 407614,
+      "filename": "000000407614.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 407868,
+      "filename": "000000407868.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 408696,
+      "filename": "000000408696.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 408830,
+      "filename": "000000408830.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 409475,
+      "filename": "000000409475.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 409542,
+      "filename": "000000409542.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 410487,
+      "filename": "000000410487.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 410612,
+      "filename": "000000410612.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 410650,
+      "filename": "000000410650.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 410735,
+      "filename": "000000410735.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 410880,
+      "filename": "000000410880.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 411530,
+      "filename": "000000411530.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 411938,
+      "filename": "000000411938.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 412887,
+      "filename": "000000412887.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 413689,
+      "filename": "000000413689.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 414673,
+      "filename": "000000414673.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 415238,
+      "filename": "000000415238.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 415536,
+      "filename": "000000415536.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 415716,
+      "filename": "000000415716.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 416343,
+      "filename": "000000416343.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 416885,
+      "filename": "000000416885.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 417043,
+      "filename": "000000417043.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 417876,
+      "filename": "000000417876.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 418062,
+      "filename": "000000418062.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 419201,
+      "filename": "000000419201.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 419974,
+      "filename": "000000419974.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 420840,
+      "filename": "000000420840.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 421757,
+      "filename": "000000421757.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 423519,
+      "filename": "000000423519.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 423944,
+      "filename": "000000423944.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 425221,
+      "filename": "000000425221.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 425227,
+      "filename": "000000425227.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 425361,
+      "filename": "000000425361.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 426166,
+      "filename": "000000426166.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 426203,
+      "filename": "000000426203.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 426297,
+      "filename": "000000426297.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 426795,
+      "filename": "000000426795.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 427655,
+      "filename": "000000427655.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 428454,
+      "filename": "000000428454.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 429109,
+      "filename": "000000429109.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 430073,
+      "filename": "000000430073.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 433103,
+      "filename": "000000433103.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 433243,
+      "filename": "000000433243.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 434247,
+      "filename": "000000434247.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 434996,
+      "filename": "000000434996.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 435081,
+      "filename": "000000435081.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 435206,
+      "filename": "000000435206.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 435208,
+      "filename": "000000435208.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 437239,
+      "filename": "000000437239.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 438226,
+      "filename": "000000438226.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 438955,
+      "filename": "000000438955.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 439290,
+      "filename": "000000439290.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 439522,
+      "filename": "000000439522.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 439715,
+      "filename": "000000439715.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 440171,
+      "filename": "000000440171.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 440184,
+      "filename": "000000440184.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 441247,
+      "filename": "000000441247.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 442306,
+      "filename": "000000442306.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 442463,
+      "filename": "000000442463.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 442746,
+      "filename": "000000442746.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 443969,
+      "filename": "000000443969.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 444275,
+      "filename": "000000444275.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 446206,
+      "filename": "000000446206.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 446207,
+      "filename": "000000446207.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 447200,
+      "filename": "000000447200.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 447465,
+      "filename": "000000447465.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 448810,
+      "filename": "000000448810.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 449432,
+      "filename": "000000449432.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 449579,
+      "filename": "000000449579.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 450075,
+      "filename": "000000450075.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 450439,
+      "filename": "000000450439.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 451150,
+      "filename": "000000451150.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 453341,
+      "filename": "000000453341.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 454798,
+      "filename": "000000454798.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 454978,
+      "filename": "000000454978.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 455448,
+      "filename": "000000455448.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 455937,
+      "filename": "000000455937.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 456143,
+      "filename": "000000456143.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 456662,
+      "filename": "000000456662.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 457559,
+      "filename": "000000457559.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 457884,
+      "filename": "000000457884.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 458325,
+      "filename": "000000458325.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 458663,
+      "filename": "000000458663.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 458790,
+      "filename": "000000458790.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 459809,
+      "filename": "000000459809.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 460147,
+      "filename": "000000460147.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 460494,
+      "filename": "000000460494.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 460841,
+      "filename": "000000460841.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 461573,
+      "filename": "000000461573.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 462031,
+      "filename": "000000462031.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 462614,
+      "filename": "000000462614.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 462728,
+      "filename": "000000462728.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 462904,
+      "filename": "000000462904.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 463647,
+      "filename": "000000463647.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 463802,
+      "filename": "000000463802.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 464089,
+      "filename": "000000464089.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 464476,
+      "filename": "000000464476.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 464689,
+      "filename": "000000464689.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 466085,
+      "filename": "000000466085.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 467315,
+      "filename": "000000467315.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 467776,
+      "filename": "000000467776.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 468245,
+      "filename": "000000468245.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 468332,
+      "filename": "000000468332.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 468965,
+      "filename": "000000468965.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 469067,
+      "filename": "000000469067.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 470173,
+      "filename": "000000470173.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 470779,
+      "filename": "000000470779.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 471567,
+      "filename": "000000471567.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 471789,
+      "filename": "000000471789.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 471869,
+      "filename": "000000471869.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 471991,
+      "filename": "000000471991.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 472030,
+      "filename": "000000472030.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 472046,
+      "filename": "000000472046.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 472623,
+      "filename": "000000472623.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 472678,
+      "filename": "000000472678.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 473821,
+      "filename": "000000473821.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 473869,
+      "filename": "000000473869.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 474028,
+      "filename": "000000474028.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 474095,
+      "filename": "000000474095.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 476119,
+      "filename": "000000476119.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 476215,
+      "filename": "000000476215.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 476491,
+      "filename": "000000476491.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 476810,
+      "filename": "000000476810.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 477805,
+      "filename": "000000477805.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 477955,
+      "filename": "000000477955.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 478393,
+      "filename": "000000478393.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 479030,
+      "filename": "000000479030.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 479099,
+      "filename": "000000479099.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 479448,
+      "filename": "000000479448.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 479912,
+      "filename": "000000479912.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 479953,
+      "filename": "000000479953.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 480122,
+      "filename": "000000480122.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 480944,
+      "filename": "000000480944.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 481159,
+      "filename": "000000481159.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 482275,
+      "filename": "000000482275.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 482917,
+      "filename": "000000482917.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 484351,
+      "filename": "000000484351.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 484415,
+      "filename": "000000484415.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 485237,
+      "filename": "000000485237.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 486046,
+      "filename": "000000486046.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 488251,
+      "filename": "000000488251.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 488710,
+      "filename": "000000488710.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 490171,
+      "filename": "000000490171.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 490936,
+      "filename": "000000490936.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 491008,
+      "filename": "000000491008.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 491071,
+      "filename": "000000491071.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 491216,
+      "filename": "000000491216.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 491470,
+      "filename": "000000491470.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 491683,
+      "filename": "000000491683.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 492362,
+      "filename": "000000492362.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 493286,
+      "filename": "000000493286.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 493613,
+      "filename": "000000493613.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 493772,
+      "filename": "000000493772.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 494913,
+      "filename": "000000494913.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 495146,
+      "filename": "000000495146.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 496409,
+      "filename": "000000496409.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 496597,
+      "filename": "000000496597.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 497599,
+      "filename": "000000497599.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 498032,
+      "filename": "000000498032.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 499109,
+      "filename": "000000499109.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 500464,
+      "filename": "000000500464.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 502336,
+      "filename": "000000502336.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 502347,
+      "filename": "000000502347.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 502732,
+      "filename": "000000502732.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 504415,
+      "filename": "000000504415.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 505169,
+      "filename": "000000505169.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 506279,
+      "filename": "000000506279.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 506454,
+      "filename": "000000506454.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 506707,
+      "filename": "000000506707.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 507235,
+      "filename": "000000507235.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 508917,
+      "filename": "000000508917.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 509008,
+      "filename": "000000509008.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 509014,
+      "filename": "000000509014.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 509258,
+      "filename": "000000509258.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 509260,
+      "filename": "000000509260.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 509403,
+      "filename": "000000509403.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 509735,
+      "filename": "000000509735.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 511398,
+      "filename": "000000511398.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 511599,
+      "filename": "000000511599.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 512657,
+      "filename": "000000512657.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 512776,
+      "filename": "000000512776.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 513580,
+      "filename": "000000513580.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 514508,
+      "filename": "000000514508.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 516316,
+      "filename": "000000516316.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 516318,
+      "filename": "000000516318.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 516677,
+      "filename": "000000516677.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 516804,
+      "filename": "000000516804.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 519039,
+      "filename": "000000519039.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 519688,
+      "filename": "000000519688.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 520009,
+      "filename": "000000520009.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 520301,
+      "filename": "000000520301.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 520324,
+      "filename": "000000520324.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 520531,
+      "filename": "000000520531.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 520659,
+      "filename": "000000520659.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 521141,
+      "filename": "000000521141.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 522751,
+      "filename": "000000522751.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 524108,
+      "filename": "000000524108.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 524850,
+      "filename": "000000524850.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 525286,
+      "filename": "000000525286.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 526103,
+      "filename": "000000526103.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 526256,
+      "filename": "000000526256.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 527960,
+      "filename": "000000527960.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 529568,
+      "filename": "000000529568.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 530052,
+      "filename": "000000530052.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 530457,
+      "filename": "000000530457.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 530836,
+      "filename": "000000530836.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 530854,
+      "filename": "000000530854.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 530975,
+      "filename": "000000530975.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 531707,
+      "filename": "000000531707.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 531771,
+      "filename": "000000531771.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 532481,
+      "filename": "000000532481.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 532493,
+      "filename": "000000532493.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 533958,
+      "filename": "000000533958.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 534041,
+      "filename": "000000534041.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 535253,
+      "filename": "000000535253.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 536073,
+      "filename": "000000536073.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 538458,
+      "filename": "000000538458.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 539962,
+      "filename": "000000539962.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 540502,
+      "filename": "000000540502.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 540962,
+      "filename": "000000540962.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 541291,
+      "filename": "000000541291.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 542089,
+      "filename": "000000542089.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 542625,
+      "filename": "000000542625.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 542776,
+      "filename": "000000542776.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 543581,
+      "filename": "000000543581.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 544052,
+      "filename": "000000544052.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 544444,
+      "filename": "000000544444.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 545407,
+      "filename": "000000545407.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 545594,
+      "filename": "000000545594.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 546475,
+      "filename": "000000546475.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 546823,
+      "filename": "000000546823.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 546964,
+      "filename": "000000546964.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 547854,
+      "filename": "000000547854.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 547886,
+      "filename": "000000547886.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 548339,
+      "filename": "000000548339.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 549220,
+      "filename": "000000549220.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 549930,
+      "filename": "000000549930.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 550084,
+      "filename": "000000550084.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 551804,
+      "filename": "000000551804.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 552883,
+      "filename": "000000552883.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 553221,
+      "filename": "000000553221.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 553731,
+      "filename": "000000553731.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 554156,
+      "filename": "000000554156.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 554291,
+      "filename": "000000554291.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 554595,
+      "filename": "000000554595.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 554735,
+      "filename": "000000554735.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 555012,
+      "filename": "000000555012.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 555050,
+      "filename": "000000555050.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 555705,
+      "filename": "000000555705.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 556498,
+      "filename": "000000556498.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 556873,
+      "filename": "000000556873.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 557501,
+      "filename": "000000557501.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 557672,
+      "filename": "000000557672.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 558213,
+      "filename": "000000558213.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 558421,
+      "filename": "000000558421.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 560312,
+      "filename": "000000560312.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 560371,
+      "filename": "000000560371.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 560880,
+      "filename": "000000560880.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 561256,
+      "filename": "000000561256.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 561679,
+      "filename": "000000561679.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 562207,
+      "filename": "000000562207.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 562448,
+      "filename": "000000562448.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 562818,
+      "filename": "000000562818.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 563702,
+      "filename": "000000563702.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 564336,
+      "filename": "000000564336.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 565469,
+      "filename": "000000565469.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 565776,
+      "filename": "000000565776.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 565962,
+      "filename": "000000565962.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 565989,
+      "filename": "000000565989.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 568290,
+      "filename": "000000568290.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 568690,
+      "filename": "000000568690.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 569030,
+      "filename": "000000569030.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 569273,
+      "filename": "000000569273.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 569565,
+      "filename": "000000569565.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 569917,
+      "filename": "000000569917.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 570664,
+      "filename": "000000570664.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 570834,
+      "filename": "000000570834.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 571313,
+      "filename": "000000571313.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 571804,
+      "filename": "000000571804.jpg",
+      "split": "holdout"
+    },
+    {
+      "image_id": 571857,
+      "filename": "000000571857.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 571943,
+      "filename": "000000571943.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 572408,
+      "filename": "000000572408.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 572462,
+      "filename": "000000572462.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 572517,
+      "filename": "000000572517.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 572678,
+      "filename": "000000572678.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 572900,
+      "filename": "000000572900.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 572956,
+      "filename": "000000572956.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 573943,
+      "filename": "000000573943.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 574315,
+      "filename": "000000574315.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 574425,
+      "filename": "000000574425.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 574810,
+      "filename": "000000574810.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 575970,
+      "filename": "000000575970.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 577864,
+      "filename": "000000577864.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 579158,
+      "filename": "000000579158.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 579635,
+      "filename": "000000579635.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 579900,
+      "filename": "000000579900.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 579902,
+      "filename": "000000579902.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 580418,
+      "filename": "000000580418.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 581100,
+      "filename": "000000581100.jpg",
+      "split": "development"
+    },
+    {
+      "image_id": 581482,
+      "filename": "000000581482.jpg",
+      "split": "development"
+    }
+  ]
+}
