@@ -1,0 +1,11 @@
+# Raw datasets
+datasets/raw/
+CV-Assurance-Dataset-v1/datasets/raw/
+
+# Images
+*.jpg
+*.jpeg
+*.png
+
+# Large dataset archives
+*.zip
